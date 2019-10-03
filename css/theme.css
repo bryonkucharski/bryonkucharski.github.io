@@ -22,9 +22,10 @@ li:nth-child(odd) .timeline-panel
 }
 .img-circle
 {
-	width: 180px;
-	height: 180px;
-	border: 7px solid #F1F1F1;
+
+  height:200px;
+  width: auto;
+  border-radius: 50%;
   display: inline-block;
   margin: 0 auto;
 }
@@ -119,5 +120,25 @@ li:nth-child(odd) .timeline-panel
     text-align: center;
 }
 .how-img img{
-    width: 50%;
+  
+  height:200px;
+  width: auto;
+ 
 }
+.how-img2 img{
+  
+  height:400px;
+  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
+.tab { padding-left: 4em; }
+.vertical{
+  margin-top:50%;
+  }
+
+  .ex1 {
+    max-width: 400px;
+  }

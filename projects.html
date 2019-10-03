@@ -10,10 +10,13 @@
 
   <title>Bryon Kucharski</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom styles for this template -->
-  <link href="css/theme.css" rel="stylesheet">
+   <!-- Bootstrap core CSS -->
+   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+   <!-- Custom styles for this template -->
+   <link href="css/theme.css" rel="stylesheet">
+ 
+   <!-- Load font awesome icons -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -27,7 +30,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="index.html">About
                 <span class="sr-only">(current)</span>
               </a>
@@ -35,14 +38,11 @@
             <li class="nav-item">
               <a class="nav-link" href="experience.html">Experience</a>
           </li>
-            <li class="nav-item">
-              <a class="nav-link" href="research.html">Research</a>
-          </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" href="projects.html">Projects</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="files/resume_bryon_kucharski.pdf">CV</a>
+                <a class="nav-link" href="files/resume_bryon_kucharski.pdf">Resume</a>
               </li>
           </ul>
         </div>
@@ -50,69 +50,74 @@
     </nav>
 
   <!-- Page Content -->
-  <div class="how-section1">
+  <div class="how-section1" >
       <div class="row">
-          <div class="col-md-6 how-img">
-              <img src="images/MV-3D-VAE-GAN.PNG" class="rounded-circle img-fluid" alt=""/>
-          </div>
-          <div class="col-md-6">
-              <h4>Multiview 3D-VAE-GAN</h4>
-                          <h4 class="subheading"> CMPSCI 674: Intelligent Visual Computing final project</h4>
-          <p class="text-muted">Extended the 3D-VAE-GAN with multiple views of 3D objects 
-            <br> [report] [code] [slides]
+          <div class="col-md-3" ></div>
+          <div class="col-md-6" >
+            <div class=" text-center how-img"><img src="images/MV-3D-VAE-GAN.PNG" class="rounded-circle img-fluid" alt=""/></div>
+            <h4 class = "text-center">Multiview 3D-VAE-GAN</h4>
+            <h4 class="text-center subheading"> CMPSCI 674: Intelligent Visual Computing final project</h4>
+            <p class="text-center text-muted">
+                A popular method in 3D object classification is to use multiple 2D images (views) of the 3D object and pass through independent CNN networks. Also, current research in generative 3D deep learning includes generating 3D voxelized objects using the VAE-GAN architecture (3D-VAE-GAN). In this project, I extend the existing 3D-VAE-GAN to include multiple views of 2D images for generating voxel based 3D objects. I found that my method had a lower average reconstruction loss on the test dataset.
+            <br> <a href="files/MV3DVAEGAN_report.pdf">[report]</a> <a href ="https://github.com/bryonkucharski/Multiview-3D-VAE-GAN">[code]</a> <a href="files/MV3DVAEGAN_slides.pptx">[slides]</a>
           </p>
           </div>
+          <div class="col-md-3" ></div>
       </div>
       <div class="row">
-          <div class="col-md-6 how-img">
-              <img src="images/rl_vae.gif" class="rounded-circle img-fluid" alt=""/>
-          </div>
+          <div class="col-md-3" ></div>
           <div class="col-md-6">
-              <h4>Learning to drive with RL and VAEs</h4>
-                          <h4 class="subheading"> CMPSCI 674: Neural Networks final project</h4>
-          <p class="text-muted">Using the DuckieTown environment, the robot learns to drive in a straight line using the DDPG alrogithm. 
-          <br> [report] [code] [poster] </p>
+            <div class=" how-img"><img src="images/rl_vae.gif" class="rounded-circle img-fluid" alt=""/></div>
+            <h4 class = "text-center">Learning to drive with RL and VAEs</h4>
+            <h4 class="text-center subheading"> CMPSCI 682: Neural Networks final project</h4>
+            <p class="text-center text-muted">Using the DuckieTown self driving car environment, the agent learns policies to drive in a straight line using the DDPG reinforcement learning algorithm. I experimented with two different state representations: one with raw images directly from the simulator, and the second with a VAE compressed version of the image to a single dimensional vector. The idea was that if the agent learns from a lower dimensional state representation, it may learn better policies or learn policies quicker than using raw images. My results showed that this was not true, and using raw images outperformed the latent representations.
+          <br> <a href="files/RL_VAE_final_report.pdf">[report]</a> <a href ="https://github.com/bryonkucharski/Learning-to-Drive-with-Reinforcement-Learning-and-Variational-Autoencoders">[code]</a> </p>
           </div>
+          <div class="col-md-3" ></div>
       </div>
       <div class="row">
-          <div class="col-md-6 how-img">
-              <img src="images/lyric_lm.png" class="rounded-circle img-fluid" alt=""/>
-          </div>
+          <div class="col-md-3" ></div>
           <div class="col-md-6">
-              <h4>Hip Hip and Gospel Music Language Modelling</h4>
-                          <h4 class="subheading"> CMPSCI 585: Introduction to Natural Language Processing final project</h4>
-          <p class="text-muted">Used and RNN-based language model to generate hip hop and gospel lyrics
-              <br> [report] [code] [poster]
+          <div class="how-img"><img src="images/real-rl.gif" class="rounded-circle img-fluid" alt=""/></div>
+          <h4 class = "text-center">Real World Robotic Projectile Catcher Using Reinforcement Learning</h4>
+          <h4 class="text-center subheading"> Senior Design Project at Wentworth Institute of Technology</h4>
+          <p class="text-center text-muted">
+            How could a robot learn to catch a ball thrown in its direction? This was the main question we aimed to talk for our senior design project.
+             Our robot was a XY style plotter robot with a cup attached to a gantry plate. To create a controlled projectile, we constructed a wooden ramp to roll ping pong balls down.
+              The robot's goal was to go to the landing position of the ball before it landed. It used Q-Learning with a state representation of (x,y,velocity) of the ping pong ball and received a reward based on the Euclidean distance between the ball and the gantry plate.
+              The position was determined by a camera above the ramp and two laser pointers measured the velocity.
+              A simulation of our enviornment was created and the agent was trained in Unity then transfered to the real life robot. 
+            <br> <a href="files/projectile_catching_MITURC.pdf">[paper]</a> <a href="https://github.com/bryonkucharski/robot-catcher">[code]</a><a href ="files/projectile_catching_MITURC_presentation.pptx">[slides]</a>
           </p>
           </div>
+          <div class="col-md-3" ></div>
       </div>
       <div class="row">
-          <div class="col-md-6 how-img">
-              <img src="images/real-rl.gif" class="rounded-circle img-fluid" alt=""/>
-          </div>
-          <div class="col-md-6">
-              <h4>Real World Robotic Projectile Catcher</h4>
-                          <h4 class="subheading"> Senior Design Project at Wentworth Institute of Technology</h4>
-          <p class="text-muted">Projectiles yo
-            <br> [report] [code] [slides]
+          <div class="col-md-3" ></div>
+        <div class="col-md-6">
+          <div class="how-img"><img src="images/lyric_lm.png" class="rounded-circle img-fluid" alt=""/></div>
+          <h4 class="text-center">Hip Hip and Gospel Music Language Modeling</h4>
+          <h4 class="text-center subheading"> CMPSCI 585: Introduction to Natural Language Processing final project</h4>
+          <p class="text-center text-muted">This project experiments with language models to generate both hip hop and gospel lyrics. We scraped the LyricWiki website to generate our dataset, and experimented with bigram, trigram, and LSTM language models. 
+              <br> <a href="files/hip_hop_gospel_lm_report.pdf">[report]</a> <a href ="https://github.com/bryonkucharski/https://github.com/bryonkucharski/Language-Modeling-to-Generate-Lyrics-for-Hip-Hop-and-Gospel-Songs">[code]</a>
           </p>
           </div>
+          <div class="col-md-3" ></div>
       </div>
+    
       <div class="row">
-          <div class="col-md-6 how-img">
-              <img src="images/juk.gif" class="rounded-circle img-fluid" alt=""/>
-          </div>
+          <div class="col-md-3" ></div>
           <div class="col-md-6">
-              <h4>The Adventures Of Juk Cesium</h4>
-                          <h4 class="subheading"> Undergraduate OOP final project</h4>
-          <p class="text-muted">Fantasy RPG created in C++ with the SFML graphics library.
-            <br> [report] [code]
+          <div class="how-img"><img src="images/juk.gif" class="rounded-circle img-fluid" alt=""/></div>
+          <h4 class="text-center">The Adventures Of Juk Cesium</h4>
+          <h4 class="text-center subheading"> Undergraduate OOP final project</h4>
+          <p class="text-center text-muted">Top-down fantasy RPG created in C++ with the SFML graphics library. The player can fight monsters, level up, explore the world, and fight bosses!
+            <br><a href="https://github.com/bryonkucharski/TheAdventuresOfJukCesium">[code]</a>
           </p>
           </div>
+          <div class="col-md-3" ></div>
       </div>
   </div>
-
-
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.slim.min.js"></script>
